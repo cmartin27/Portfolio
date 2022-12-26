@@ -459,6 +459,96 @@ section {
   background: #F6F1F8;
   border: 2px solid #6930C3;
 }
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+.gallery-item {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 100%;
+
+}
+
+.gallery-item-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  transition: all 0.4s;
+}
+
+.gallery-item img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+
+.gallery-item::after {
+  content: '';
+  width: calc(100% - 3rem);
+  height: calc(100% - 3rem);
+  border: 1px solid #F6F1F8;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 90;
+  transition: all 0.3s;
+  transform: scale(1.1);
+  opacity: 0;
+  display: block;
+  opacity: 0;
+}
+
+.gallery-item-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 99;
+}
+
+.gallery-item-content h3{
+  font-weight: bold;
+  color: #F6F1F8;
+
+}
+
+.gallery-item-description {
+  opacity: 0;
+  transform: scale(1.3);
+  transition: all 0.3s;
+}
+
+.gallery-item img {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gallery-item:hover img {
+  width: 100%;
+}
+
+.gallery-item:hover::after {
+  opacity: 1;
+  transform: none;
+}
+
+.gallery-item:hover .gallery-item-description {
+  opacity: 1;
+  transform: none;
+}
+
+.gallery-item:hover .gallery-item-overlay {
+  background: rgba(54, 24, 99, 0.9);
+}
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -472,7 +562,7 @@ section {
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
-  background: #F6F1F8;
+  background: rgb(246, 241, 248,0.8);
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -508,7 +598,7 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(246, 241, 255, 0.5); 
   position: absolute;
   left: 0;
   right: 0;
@@ -534,14 +624,15 @@ section {
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #F6F1F8;
   font-size: 28px;
+  font-weight: bold;
+  color: #6930C3;
   text-align: center;
-  background: rgba(20, 157, 221, 0.75);
   transition: 0.3s;
-  width: 50%;
+  width: 100%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  color: #946CD5;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a+a {
