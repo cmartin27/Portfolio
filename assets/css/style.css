@@ -126,9 +126,7 @@ h6 {
   text-decoration: none;
 }
 
-#main {
-  margin-left: 300px;
-}
+
 
 @media (max-width: 1199px) {
   #header {
@@ -228,7 +226,6 @@ h6 {
 
 #headerSection {
   background-color: rgb(148, 108, 213, 0.5);
-  margin: 10px;
 }
 
 #headerTitle {
@@ -244,6 +241,7 @@ h6 {
 section {
   padding: 60px 0;
   overflow: hidden;
+  margin: 10px;
 }
 
 .section-bg {
