@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #6930C3;
+  color: #367DD3;
   text-decoration: none;
 }
 
@@ -49,6 +49,31 @@ h6 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
+
+.navbar a span {
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  background-color: #6930C3;
+  color: #F6F1F8;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+
+
 
 ul.nav {
   padding-left: 60px;
@@ -101,27 +126,6 @@ ul.nav > li {
     #87F0AF
   );
 }
-
-.navbar a span {
-  right: 15px;
-  top: 15px;
-  z-index: 9998;
-  border: 0;
-  font-size: 24px;
-  transition: all 0.4s;
-  outline: none !important;
-  background-color: #6930C3;
-  color: #F6F1F8;
-  width: 40px;
-  height: 40px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 0;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
 
 /*--------------------------------------------------------------
 # Sections General
@@ -274,6 +278,8 @@ section {
   overflow: hidden;
   position: relative;
   padding-bottom: 100%;
+  width: 420px;
+  height: 420px;
 
 }
 
@@ -364,34 +370,13 @@ section {
 --------------------------------------------------------------*/
 #footer {
   padding: 15px;
-  color: #f4f6fd;
+  color: #EDF6F9;
   font-size: 14px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  z-index: 9999;
-  background: #040b14;
-}
-
-#footer .copyright {
+  background: black;
   text-align: center;
 }
 
-#footer .credits {
-  padding-top: 5px;
-  text-align: center;
-  font-size: 13px;
-  color: #eaebf0;
-}
 
-@media (max-width: 1199px) {
-  #footer {
-    position: static;
-    width: auto;
-    padding-right: 20px 15px;
-  }
-}
 
 
 /*--------------------------------------------------------------
@@ -400,7 +385,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: #3BCEFF;
 }
 
 .about .content ul {
@@ -421,7 +406,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: #87F0AF;
   line-height: 0;
 }
 
@@ -437,13 +422,13 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #050d18;
+  color: #3BCEFF;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #87F0AF;
   position: relative;
 }
 
@@ -453,27 +438,31 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: #EDF6F9;
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
-  padding: 5px 15px;
+  padding: 5px 0px;
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
+  margin-right: 20px;
 }
 
 .resume .resume-item ul {
+  list-style: none;
   padding-left: 20px;
 }
 
 .resume .resume-item ul li {
   padding-bottom: 10px;
 }
-
+.resume .resume-item ul li i{
+  padding-right: 10px;
+  color: #87F0AF;
+}
 .resume .resume-item:last-child {
   padding-bottom: 0;
 }
@@ -486,10 +475,22 @@ section {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #fff;
-  border: 2px solid #1f5297;
+  background: #171728;
+  border: 2px solid #87F0AF;
 }
 
+.resume-list ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.resume-list ul li {
+  padding-bottom: 10px;
+}
+.resume-list ul li i{
+  padding-right: 10px;
+  color: #87F0AF;
+}
 
 /*--------------------------------------------------------------
 # Contact
@@ -572,7 +573,7 @@ section {
 .contact .php-email-form {
   width: 100%;
   padding: 30px;
-  background: #fff;
+  background: #171728;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
