@@ -729,3 +729,117 @@ section {
   visibility: visible;
   opacity: 1;
 }
+
+
+
+/*--------------------------------------------------------------
+# Projects
+--------------------------------------------------------------*/
+
+
+.projects .header h1 {
+  padding: 20px;
+  font-size: 54px;
+  line-height: 1.1481481481;
+  font-weight: 900;
+  color: #EDF6F9;
+  text-align: center;
+}
+
+.projects .header h2 {
+  color: #87F0AF;
+  font-weight: 700;
+
+}
+
+.projects .header h3 {
+  color: #85E4FF;
+  font-weight: 700;
+}
+
+.projects .header p {
+  color: #EDF6F9;
+  font-size: 18px;
+}
+
+.img-overlay img {
+  margin: 0;
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(95,58,234,0.5) 0%, rgba(0,0,0,1) 69%);
+}
+
+.overlay div { 
+  padding-top: 10px;
+}
+
+
+.img-overlay {
+    position: relative;
+    height: 700px;
+    filter: drop-shadow(-2px 8px 20px #000);
+    z-index: 10;
+}
+
+.projects .description {
+  position: relative;
+  background-color: #171728;
+  padding-right: 400px;
+  padding-left: 400px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  height: fit-content;
+}
+
+.projects .description p{
+  line-height: 1.8166666667;
+  font-size: 18px;
+
+}
+
+.projects .description h1{
+  line-height: 1.8166666667;
+  font-weight: 800;
+  color: #87F0AF;
+  padding-top: 10px;
+
+}
+.projects .collab-section {
+  position: relative;
+  background-color: #171728;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.projects .collaborators {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.projects .collaborator {
+  padding-right: 50px;
+  padding-left: 50px;
+
+}
+
+
+.projects .collaborator a{
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #85E4FF;
+
+}
