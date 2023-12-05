@@ -785,6 +785,11 @@ section {
   padding-top: 10px;
 }
 
+.overlay img { 
+  width: 640px;
+  height: 380px;
+}
+
 
 .img-overlay {
     position: relative;
