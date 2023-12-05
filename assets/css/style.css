@@ -813,6 +813,17 @@ section {
   font-size: 18px;
 }
 
+.projects .description ul {
+  list-style: none;
+}
+
+.projects .description ul li i{
+  padding-right: 10px;
+  color: #87F0AF;
+}
+
+
+
 .projects .description h1{
   line-height: 1.8166666667;
   font-weight: 800;
