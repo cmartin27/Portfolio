@@ -783,6 +783,7 @@ section {
 
 .overlay div { 
   padding-top: 10px;
+
 }
 
 .overlay img { 
@@ -790,6 +791,13 @@ section {
   height: 380px;
 }
 
+
+.overlay .android_img { 
+  width: 192px;
+  height: 403px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
 
 .img-overlay {
     position: relative;
