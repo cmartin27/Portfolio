@@ -809,10 +809,10 @@ section {
 .projects .description {
   position: relative;
   background-color: #171728;
-  padding-right: 400px;
-  padding-left: 400px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-right: 20%;
+  padding-left: 20%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   height: fit-content;
 }
 
